@@ -1,0 +1,39 @@
+<div class="container">
+  <h2>Your Liked Tracks</h2>
+
+  <!-- Error Message -->
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Liked Tracks Table -->
+  <table class="table table-striped" *ngIf="likedTracks.length > 0; else noTracks">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>Genre</th>
+        <th>Duration</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let track of likedTracks; let i = index">
+        <td>{{ i + 1 }}</td> <!-- Will iterate by order inserted in DB and will iterate numerically -->
+        <td>{{ track.title }}</td>
+        <td>{{ track.artist }}</td>
+        <td>{{ track.genre }}</td>
+        <td>{{ track.duration }}</td>
+        <td> <!--If a user wants to unlike a track they are able to perform this operation-->
+          <button class="btn btn-danger" (click)="unlikeTrack(track.track_id)">Unlike</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- No Tracks Message -->
+  <ng-template #noTracks>
+    <p>You have not liked any tracks yet.</p>
+  </ng-template>
+</div>

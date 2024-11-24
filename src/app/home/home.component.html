@@ -1,0 +1,23 @@
+<div class="hero"> <!--This component will display at the top of page which will welcome the user or guest upon logging in-->
+  <div class="welcome-message">
+    <h1>Welcome, {{ username ? username : 'Guest' }}!</h1>
+    <p>Your music journey starts here.</p>
+    <a href="/tracks" class="btn-primary">Explore Tracks</a>
+    <a href="/liked-tracks" class="btn-secondary">View Liked Tracks</a>
+  </div>
+</div>
+
+<section class="features"> <!--This component will list the features of the application that will allow users to understand more about the app-->
+  <div class="feature">
+    <h2>Discover Music</h2>
+    <p>Explore tracks tailored to your taste.</p>
+  </div>
+  <div class="feature">
+    <h2>Save Favorites</h2>
+    <p>Like tracks and revisit your favorite songs anytime.</p>
+  </div>
+  <div class="feature">
+    <h2>Stay Connected</h2>
+    <p>Keep track of your listening habits and share playlists with friends.</p>
+  </div>
+</section>

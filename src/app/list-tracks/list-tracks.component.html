@@ -1,0 +1,42 @@
+<div class="container">
+  <h2>Available Tracks</h2>
+
+  <!-- Success or Error Message -->
+  <div *ngIf="showMessage" class="alert alert-info">
+    {{ message }}
+  </div>
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Tracks Table from the database -->
+  <table class="table table-striped" *ngIf="tracks.length > 0">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>Genre</th>
+        <th>Duration</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>   <!-- Will iterate by order inserted in DB and will iterate numerically -->
+      <tr *ngFor="let track of tracks; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ track.title }}</td>
+        <td>{{ track.artist }}</td>
+        <td>{{ track.genre }}</td>
+        <td>{{ track.duration }}</td>
+        <td>
+          <button
+            class="btn btn-success"
+            (click)="likeTrack(track.track_id)"
+          >
+            Like
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

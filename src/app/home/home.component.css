@@ -1,0 +1,90 @@
+/* General Layout */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero .welcome-message h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero .welcome-message p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn-primary, .hero .btn-secondary {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.hero .btn-primary {
+  background-color: #090542;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: #ff4757;
+}
+
+.hero .btn-secondary {
+  background-color: white;
+  color: #6a11cb;
+  border: 1px solid #6a11cb;
+}
+
+.hero .btn-secondary:hover {
+  background-color: #d4d4d4;
+  color: #333;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.features .feature {
+  text-align: center;
+  max-width: 300px;
+}
+
+.features .feature h2 {
+  color: #6a11cb;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.features .feature p {
+  font-size: 1rem;
+  color: #555;
+}
