@@ -4,6 +4,7 @@
 **Course**: CST-391  
 **Instructor**: Instructor Sparks  
 **Date**: 11/23/2024  
+![Ears2HearAngularGif](https://github.com/user-attachments/assets/e5e051d0-1838-49aa-a5a0-41f385ced361)
 
 ---
 
