@@ -22,7 +22,7 @@ Ears2Hear is a Christian music app designed to help users discover and enjoy a v
 
 ## GitHub Repositories
 
-- [Frontend Repository](https://github.com/kaihedrick/Ears2Hear.Frontend)  
+- [Frontend Repository](https://github.com/kaihedrick/Ears2Hear.AngularFrontend)  
 - [Backend Repository](https://github.com/kaihedrick/Ears2Hear.Backend)  
 
 ---
