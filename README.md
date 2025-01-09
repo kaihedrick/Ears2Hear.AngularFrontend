@@ -92,4 +92,4 @@ JWT-based authentication has been implemented to:
 1. Clone the repositories:
    ```bash
    git clone https://github.com/kaihedrick/Ears2Hear.Backend.git
-   git clone https://github.com/kaihedrick/Ears2Hear.Frontend.git
+   git clone https://github.com/kaihedrick/Ears2Hear.AngularFrontend.git
